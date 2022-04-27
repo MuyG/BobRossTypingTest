@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+		<title>The Typing Test</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<section class="titleContainer">
+			<h1>TYPING TEST</h1>
+		</section>
+		<main>
+			<section id="testParagraphSection">
+				<span id="placeToPutPastWords"></span><span id="placeToPutCurrentWords"></span><span id="placeToPutFutureWords">Test will appear here when ready...</span>
+			</section>
+			<ul>
+				<li><input type="text" name="textBox" id="placeToType" placeholder="Click start or press enter...">
+				<li id="startButton"><span>START</span></li>
+				<li><p>Correct Words: <span id="correctWords">0</span></p></li>
+				<li><p>Errors: <span id="errors">0</span></p></li>
+				<li><p>Time: <span id="time">0</span></p></li>
+			</ul>	
+		</main>
+		<section id="endContainer">
+			<ul>
+				<li><span>WPM: </span><span id="placeToPutWPM"></span></li>
+				<li><span>Accuracy: </span><span id="finalErrors"></span></li>
+			</ul>
+		</section>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

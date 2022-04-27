@@ -1,0 +1,183 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+     font-family: 'Work Sans', sans-serif;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body{
+     background: linear-gradient(45deg, #ee7752, #e73c7e, #b800fe, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+     text-align: center;
+     height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+body,
+main,
+ul{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+body{
+     justify-content: start;
+}
+.titleContainer{
+     padding: 80px 0;
+}
+main{
+     position: relative;
+     justify-content: start;
+     background-color: white;
+     padding: 40px 0;
+     width: 800px;
+     border-radius: 25px;
+}
+h1,
+p{
+     color: #18141c;
+}
+h1{
+     font-size: 5rem;
+     font-weight: 600;
+     color: white;
+     font-family: 'Work Sans', sans-serif;
+}
+p,
+span,
+label,
+input{
+     font-weight: 400;
+}
+
+/******************************************
+/* Testing paragraph
+/*******************************************/
+
+#testParagraphSection{
+     position: relative;
+     background-color: white;
+     width: 600px;
+     height: 110px;
+     line-height: 2rem;
+     overflow: hidden;
+     text-align: left;
+     font-size: 1.5rem;
+     margin: 0 15px;
+     padding: 10px 0;
+}
+#placeToPutPastWords{
+     color: rgb(24,20,28,0.6);
+}
+#placeToPutCurrentWords{
+     display: none;
+     color: white;
+     padding: 5px 10px;
+     border-radius: 25px;
+     background: linear-gradient(45deg, #ee7752, #e73c7e, #b800fe, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+#placeToPutFutureWords{
+     color: rgb(24,20,28,0.6);
+}
+
+/******************************************
+/* Typing section and trackers
+/*******************************************/
+
+ul{
+     text-align: start;
+}
+main li{
+     margin: 25px 0;
+}
+main li input{
+     font-size: 1.2rem;
+     color: rgb(24,20,28,1);
+     padding: 10px 25px;
+     width: 600px;
+     border: 2px solid rgb(24,20,28,0.8);
+     border-radius: 50px;
+}
+main li p{
+     font-size: 1.3rem;
+}
+#startButton{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 150px;
+     height: 50px;
+     border: 2px solid rgb(24,20,28,0.8);
+     background-color: white;
+     font-size: 1.4rem;
+     border-radius: 10px;;
+}
+#startButton:hover{
+     background: linear-gradient(45deg, #ee7752, #e73c7e, #b800fe, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 3s ease infinite;
+     color: white;
+     cursor: pointer;
+     border: none;
+}
+#correctWords{
+     color: #23d5ab;
+}
+#errors{
+     color: #e73c7e;
+}
+
+/******************************************
+/* WPM Container
+/*******************************************/
+
+#endContainer{
+     display: none;
+     position: absolute;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     width: 800px;
+     height: 400px;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     font-family: 'Work Sans', sans-serif;
+}
+#endContainer span{
+     font-size: 5rem;
+     font-weight: 600;
+     color: white;
+     font-family: 'Work Sans', sans-serif;
+     margin-left: 25px;
+}
